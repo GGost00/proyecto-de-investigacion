@@ -1,0 +1,94 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{listings}
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+\usepackage{cite}
+
+\begin{document}
+
+\begin{titlepage}
+    \begin{center}
+        \vspace*{1cm}
+            
+        \Huge
+        \textbf{Nociones de la memoria del computador}
+            
+        \vspace{0.5cm}
+        \LARGE
+        Subtítulo
+            
+        \vspace{1.5cm}
+            
+        \textbf{Gabriel Andres Restrepo Izquierdo}
+            
+        \vfill
+            
+        \vspace{0.8cm}
+            
+        \Large
+        Despartamento de Ingeniería Electrónica y Telecomunicaciones\\
+        Universidad de Antioquia\\
+        Medellín\\
+        Septiembre de 2020
+            
+    \end{center}
+\end{titlepage}
+
+\tableofcontents
+
+\section{definicion de que es la memoria de un computador.}
+
+\section{tipos de memorias que conozco} \label{contenido}
+
+\section{Describción la manera como se gestiona la memoria en un computador.}
+
+\section{¿qué hace que una memoria sea más rápida que otra? ¿Por qué esto es importante?}
+Esta sección es para ver qué pasa con los comandos 
+que definen texto
+
+El paquete también agrega un comportamiento especial 
+a <<estas marcas para hacer citas textuales>> tal como 
+lo indican las reglas de la RAE. \cite{dirac}
+
+citamos un nuevo autos \cite{knuth-fa}
+\begin{lstlisting}
+#include <stdio.h>
+#define N 10
+/* Block
+ * comment */
+
+int main()
+{
+    int i;
+
+    // Line comment.
+    puts("Hello world!");
+    
+    for (i = 0; i < N; i++)
+    {
+        puts("LaTeX is also great for programmers!");
+    }
+
+    return 0;
+}
+\end{lstlisting}
+
+A continuación se presenta el logo de C++ Figura (\ref{fig:cpplogo})
+
+\begin{figure}[h]
+\includegraphics[width=4cm]{cpplogo.png}
+\centering
+\caption{Logo de C++}
+\label{fig:cpplogo}
+\end{figure}
+
+En la sección de teoremas (\ref{contenido})
+
+\section{Conclusión} \label{conclulsion}
+
+\bibliographystyle{IEEEtran}
+\bibliography{references}
+
+\end{document}
